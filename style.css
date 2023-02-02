@@ -1,25 +1,53 @@
+body {
+  margin: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+#navbar {
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 521px) {
+  #navbar {
+    flex-direction: column;
+  }
+}
 #container1 {
   width: auto;
   height: 600px;
-  object-fit: cover;
+  background-position: center center;
   background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  text-shadow: black 1px 10px 10px;
 }
 #container2 {
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+
   width: auto;
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: auto auto; */
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 1080px) {
+  #container2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #sideimage1 {
@@ -39,4 +67,46 @@
 #madewithlove {
   background-color: #6f4e37;
   text-align: center;
+}
+#container3 {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+#ourmenu {
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#sideimage2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 50%;
+  border-radius: 10%;
+  background-position: center center;
+  background-image: url("https://images.unsplash.com/photo-1527596428171-7885b82c91c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=737&q=80");
+}
+#sideimage2:hover {
+}
+button {
+  border-radius: 10%;
+  background-color: black;
+  color: white;
+  font-size: 100px;
+  border: 1px solid black;
+}
+button:hover {
+  transition: all 1s;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
