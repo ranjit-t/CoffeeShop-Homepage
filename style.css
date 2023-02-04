@@ -95,18 +95,30 @@ body {
   border-radius: 10%;
   background-position: center center;
   background-image: url("https://images.unsplash.com/photo-1527596428171-7885b82c91c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=737&q=80");
+  display: flex;
+  flex-direction: column;
 }
-#sideimage2:hover {
-}
-button {
-  border-radius: 10%;
+#menulist {
+  height: auto;
+  width: 300px;
   background-color: black;
-  color: white;
-  font-size: 100px;
-  border: 1px solid black;
+  text-align: center;
+  border-radius: 25px;
 }
-button:hover {
-  transition: all 1s;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+
+#menulist > p {
+  font-size: 30px;
+}
+#menulist > p:hover {
+  text-shadow: 2px 2px 2px red;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  #container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
